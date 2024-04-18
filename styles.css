@@ -1,0 +1,86 @@
+.hidden{
+    display:none;
+}
+body {
+    font-family: sans-serif;
+    background: #103e66;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    width: 99%;
+    height: 800px; 
+    border: 3px solid #000;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.box {
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 16px;
+    width: 1300px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-550px);
+}
+
+h1 {
+    background: -webkit-linear-gradient(rgb(111, 241, 219), rgb(200, 195, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    background: -webkit-linear-gradient(rgb(111, 241, 219), rgb(200, 195, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+p {
+    color: white;
+    animation: bounce 2s infinite;}
+    @keyframes bounce{
+        0%{transform: translateY(0);}
+        40%{transform: translateY(-5px);}
+        60%{transform: translateY(-5px);}
+    }
+    
+button {
+    color: white;
+    background: #007b5f;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    cursor: pointer;
+}
+    
+button:hover {
+    background-color: #014636;
+    animation: pulse 2s infinite;}
+    @keyframes pulse {
+        0%, 100% {transform: scale(1);}
+        50% {transform: scale(1.2);}
+}
+
+h3 {
+    font-size: small;
+    font-family: sans-serif;
+    color: white;
+}
