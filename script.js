@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const iniciarJogoButton = document.getElementById('jogo');
     const box = document.querySelector('.box');
     const somBolha = new Audio('assets/pop.mp3');
+    const contagemBolhasEstouradas = document.getElementById('contagemBolhasEstouradas');
+    let contagemClicks = 0;
+
 
 
     function mudarImagem() {
@@ -26,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
 
         imagem.addEventListener('click', function() {
+            contagemClicks++
+            contagemBolhasEstouradas.textContent = `Bolhas Estouradas: ${contagemClicks}`;
             somBolha.play();
             container.removeChild(imagem);
             mudarImagem();
